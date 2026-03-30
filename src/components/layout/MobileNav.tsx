@@ -30,7 +30,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps) {
       <div className="flex h-full flex-col items-center justify-center">
         <button
           onClick={onClose}
-          className="absolute top-5 right-6 p-2 text-white"
+          className="absolute top-5 right-6 p-4 text-white"
           aria-label="Close menu"
         >
           <svg

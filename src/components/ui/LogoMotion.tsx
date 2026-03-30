@@ -75,8 +75,8 @@ export default function LogoMotion({
           preload="auto"
           onError={() => setVideoFailed(true)}
           onEnded={handleVideoEnd}
-          className="max-w-full max-h-full object-contain"
-          style={{ width, height }}
+          className="w-full max-w-[90vw] md:max-w-[700px] h-auto object-contain"
+          style={{ maxWidth: width, aspectRatio: `${width}/${height}` }}
         >
           <source src={webmSrc} type="video/webm" />
         </video>
@@ -93,7 +93,8 @@ export default function LogoMotion({
             alt={alt}
             width={width}
             height={height}
-            className="object-contain"
+            className="w-full max-w-[90vw] md:max-w-[700px] h-auto object-contain"
+            style={{ maxWidth: width }}
             priority
           />
         </div>

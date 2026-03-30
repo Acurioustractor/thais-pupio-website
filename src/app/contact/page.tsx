@@ -30,9 +30,15 @@ export default function ContactPage() {
             <h1 className="font-serif text-3xl md:text-5xl font-light text-stone-900 tracking-wide">
               Let&rsquo;s create something meaningful
             </h1>
+            <p className="mt-4 text-stone-600 font-light leading-relaxed">
+              Building a home can feel overwhelming — the decisions, the budget,
+              the unknowns. You don&rsquo;t need to navigate this alone.
+            </p>
             <p className="mt-4 text-stone-500 font-light leading-relaxed">
-              Every home begins with a dream and a conversation. Tell us about
-              the space you&rsquo;re imagining — we&rsquo;d love to listen.
+              Every project begins with listening. Together, we&rsquo;ll bring
+              clarity to your vision, confidence to the process, and create a
+              space that reflects who you are — where you feel at home, body and
+              soul.
             </p>
             <p className="mt-4 text-stone-400 font-light text-sm">
               {siteConfig.contact.email}
@@ -87,6 +93,21 @@ export default function ContactPage() {
 
                 <div>
                   <label
+                    htmlFor="phone"
+                    className="block text-sm tracking-[0.1em] uppercase text-stone-500 mb-2"
+                  >
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    className="w-full border-b border-stone-300 bg-transparent py-2 text-stone-900 font-light focus:border-stone-900 focus:outline-none transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label
                     htmlFor="message"
                     className="block text-sm tracking-[0.1em] uppercase text-stone-500 mb-2"
                   >
@@ -103,7 +124,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="mt-4 text-sm tracking-[0.2em] uppercase text-stone-900 border border-stone-900 px-8 py-3 hover:bg-stone-900 hover:text-white transition-colors"
+                  className="mt-4 w-full sm:w-auto text-sm tracking-[0.2em] uppercase text-stone-900 border border-stone-900 px-8 py-4 hover:bg-stone-900 hover:text-white transition-colors"
                 >
                   Send Message
                 </button>

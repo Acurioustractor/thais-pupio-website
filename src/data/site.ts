@@ -9,7 +9,6 @@ export const siteConfig: SiteConfig = {
   nav: [
     { label: "Projects", href: "/projects" },
     { label: "About", href: "/about" },
-    { label: "Philosophy", href: "/philosophy" },
     { label: "Press", href: "/press" },
     { label: "Awards", href: "/awards" },
     { label: "Contact", href: "/contact" },

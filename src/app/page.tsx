@@ -18,15 +18,15 @@ export default function HomePage() {
     <main>
       {/* ── Hero — full bleed image with text overlay ── */}
       <section className="relative h-[100dvh]" style={{ minHeight: "100vh" }}>
-        <FullBleedVideo src="/videos/hero-placeholder.mp4" />
+        <FullBleedVideo src="/videos/hero-banner.mp4" />
         <div className="gradient-overlay-full absolute inset-0" />
         <TextOverlay position="bottom-left">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-light text-white tracking-wide leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-serif font-light text-white tracking-wide leading-tight">
             Designing ways
             <br />
             of living
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-white/80 font-light max-w-xl">
+          <p className="mt-4 text-base md:text-lg lg:text-xl text-white/80 font-light max-w-xl">
             Architecture grounded in neuroscience, sustainability, and the art
             of feeling at home
           </p>
@@ -201,13 +201,13 @@ export default function HomePage() {
               <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
                   href="/projects"
-                  className="text-sm tracking-[0.2em] uppercase text-stone-900 border border-stone-900 px-8 py-3 hover:bg-stone-900 hover:text-white transition-colors"
+                  className="text-sm tracking-[0.2em] uppercase text-stone-900 border border-stone-900 px-8 py-4 hover:bg-stone-900 hover:text-white transition-colors text-center"
                 >
                   All Projects
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-sm tracking-[0.2em] uppercase text-stone-500 border-b border-stone-300 pb-1 hover:text-stone-800 hover:border-stone-800 transition-colors self-center"
+                  className="text-sm tracking-[0.2em] uppercase text-stone-500 border-b-2 border-stone-300 pb-2 hover:text-stone-800 hover:border-stone-800 transition-colors self-center"
                 >
                   Get in Touch
                 </Link>

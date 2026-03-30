@@ -95,7 +95,7 @@ export default function Header() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(true)}
-            className={`md:hidden p-2 transition-colors ${
+            className={`md:hidden p-4 -mr-4 transition-colors ${
               solid ? "text-stone-900" : "text-white"
             }`}
             aria-label="Open menu"

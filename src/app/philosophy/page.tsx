@@ -68,7 +68,7 @@ export default function PhilosophyPage() {
             </div>
           </FadeInOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 md:gap-x-16 gap-y-10 md:gap-y-12">
             <FadeInOnScroll>
               <div className="border-l-2 border-burnt-orange/30 pl-6">
                 <h3 className="font-serif text-xl md:text-2xl font-light text-stone-900 mb-3">
