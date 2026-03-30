@@ -5,6 +5,7 @@ import TextOverlay from "@/components/ui/TextOverlay";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
 import ParallaxSection from "@/components/ui/ParallaxSection";
 import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
+import LogoMotion from "@/components/ui/LogoMotion";
 import { philosophy } from "@/data/site";
 import { projects } from "@/data/projects";
 
@@ -16,19 +17,29 @@ const byronReno = projects.find((p) => p.slug === "byron-bay-renovation")!;
 export default function HomePage() {
   return (
     <main>
-      {/* ── Hero — full bleed image with text overlay ── */}
+      {/* ── Hero — full bleed video with animated logo ── */}
       <section className="relative h-[100dvh]" style={{ minHeight: "100vh" }}>
         <FullBleedVideo src="/videos/hero-banner.mp4" />
         <div className="gradient-overlay-full absolute inset-0" />
+
+        {/* Centered animated logo — dissolves before video ends */}
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none animate-[fadeIn_0.5s_ease-in_both,fadeOut_2s_ease-out_10s_both]">
+          <LogoMotion
+            webmSrc="/videos/logo-beige.webm"
+            fallbackSrc="/images/brand/logo-beige.png"
+            alt="thais pupio"
+            width={500}
+            height={280}
+          />
+          <p className="mt-6 text-sm md:text-base tracking-[0.3em] uppercase text-white/60 font-light animate-[fadeIn_1s_ease-in_3s_both]">
+            Architect of Living
+          </p>
+        </div>
+
+        {/* Bottom-left tagline */}
         <TextOverlay position="bottom-left">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-serif font-light text-white tracking-wide leading-tight">
-            Designing ways
-            <br />
-            of living
-          </h1>
-          <p className="mt-4 text-base md:text-lg lg:text-xl text-white/80 font-light max-w-xl">
-            Architecture grounded in neuroscience, sustainability, and the art
-            of feeling at home
+          <p className="text-base md:text-lg lg:text-xl text-white/80 font-light max-w-xl">
+            Authentic, sensory &amp; sustainable design
           </p>
         </TextOverlay>
         <ScrollIndicator />

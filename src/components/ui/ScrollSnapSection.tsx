@@ -9,7 +9,7 @@ export default function ScrollSnapSection({
 }: ScrollSnapSectionProps) {
   return (
     <section
-      className={`h-[100dvh] snap-start snap-always relative overflow-hidden ${className}`}
+      className={`min-h-[100dvh] snap-start snap-always relative ${className}`}
       style={{ minHeight: "100vh" }}
     >
       {children}

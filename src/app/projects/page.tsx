@@ -13,14 +13,14 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <main className="min-h-screen bg-white pt-28 pb-20">
+      <main className="min-h-screen bg-white pt-24 pb-20">
         <div className="mx-auto max-w-7xl px-6 md:px-12">
           <h1 className="font-serif text-4xl md:text-5xl font-light text-stone-900 tracking-wide">
             Projects
           </h1>
 
           {/* Project grid — larger tiles, 2 columns */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {projects.map((project) => (
               <FadeInOnScroll key={project.slug}>
                 <ProjectCard project={project} />

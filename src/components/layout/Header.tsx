@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/data/site";
 import MobileNav from "./MobileNav";
 
@@ -68,13 +69,29 @@ export default function Header() {
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-12">
-          <Link
-            href="/"
-            className={`text-lg tracking-[0.15em] lowercase font-light transition-colors ${
-              solid ? "text-stone-900" : "text-white"
-            }`}
-          >
-            {siteConfig.name}
+          <Link href="/" className="relative h-20 w-36 md:h-24 md:w-44 -my-4 block">
+            {/* Green logo for solid/white header */}
+            <Image
+              src="/images/brand/logo-green.png"
+              alt={siteConfig.name}
+              fill
+              sizes="176px"
+              className={`object-contain object-left transition-opacity duration-300 ${
+                solid ? "opacity-100" : "opacity-0"
+              }`}
+              priority
+            />
+            {/* White logo for transparent/dark header */}
+            <Image
+              src="/images/brand/logo-white.png"
+              alt={siteConfig.name}
+              fill
+              sizes="176px"
+              className={`object-contain object-left transition-opacity duration-300 ${
+                solid ? "opacity-0" : "opacity-100"
+              }`}
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

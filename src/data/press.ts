@@ -15,7 +15,6 @@ export const pressItems: PressItem[] = [
     project: "The Earthen House",
     description: "Magazine Issue 46",
     image: "/images/press/habitus-living.png",
-    logo: "/images/press/logos/habitus-living.png",
     url: "https://www.habitusliving.com",
   },
   {
@@ -23,7 +22,6 @@ export const pressItems: PressItem[] = [
     title: "The Earthen House",
     project: "The Earthen House",
     image: "/images/press/local-project.png",
-    logo: "/images/press/logos/the-local-project.png",
     url: "https://thelocalproject.com.au",
   },
   {
@@ -31,14 +29,12 @@ export const pressItems: PressItem[] = [
     title: "Erva Nail Spa",
     project: "Erva Nail Spa",
     image: "/images/press/inside-gold-coast.jpg",
-    logo: "/images/press/logos/inside-gold-coast.png",
   },
   {
     publication: "Stir World",
     title: "The Earthen House",
     project: "The Earthen House",
     image: "/images/press/stir-world.jpg",
-    logo: "/images/press/logos/stir-world.png",
     url: "https://www.stirworld.com",
   },
 ];
